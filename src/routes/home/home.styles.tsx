@@ -35,6 +35,7 @@ export const TimerContainer = styled.article`
 export const TimeContainer = styled.div`
   width: 17.5%;
   max-width: 72px;
+  min-width: 72px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -105,3 +106,37 @@ export const BackgroundImage = styled.img`
   width: 100%;
   object-fit: cover;
 `;
+
+export const ConfigurationIconContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 4%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    svg {
+      color: ${(props) => props.theme.iconHoverColor} !important;
+    }
+    cursor: pointer;
+  }
+`;
+
+export const ConfigurationContainer = styled.div`
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 15px;
+  background-color: ${(props) => props.theme.backgroundColor};
+  box-shadow: 0 0 6px 4px ${(props) => props.theme.shadowColor};
+`;
+
+export const LaunchTimestampLabel = styled.label`
+  display: block;
+  text-align: center;
+  color: ${(props) => props.theme.primaryColor};
+  font-size: 14px;
+  margin-bottom: 10px;
+`;
+
+export const LaunchTimestampInput = styled.input``;
