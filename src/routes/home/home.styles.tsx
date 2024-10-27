@@ -12,6 +12,7 @@ export const TimerHeading = styled.h1`
   font-size: 18px;
   text-align: center;
   width: 80%;
+  max-width: 330px;
   margin: auto;
   position: absolute;
   top: 35%;
@@ -33,6 +34,7 @@ export const TimerContainer = styled.article`
 
 export const TimeContainer = styled.div`
   width: 17.5%;
+  max-width: 72px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -65,7 +67,6 @@ export const SocialsContainer = styled.div`
   height: 20%;
   position: absolute;
   bottom: 0;
-  translate: transform(-50%, -50%);
   display: flex;
   gap: 25px;
   justify-content: center;

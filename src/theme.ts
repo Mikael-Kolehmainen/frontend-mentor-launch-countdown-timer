@@ -5,4 +5,5 @@ export const theme = {
   primaryFontColor: "hsl(0, 0%, 100%)",
   secondaryFontColor: "",
   iconColor: "hsl(237, 18%, 59%)",
+  iconHoverColor: "hsl(234, 17%, 12%)",
 };
