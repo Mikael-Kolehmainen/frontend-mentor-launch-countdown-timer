@@ -1,15 +1,18 @@
-import { MouseEventHandler } from "react";
-import { IconContainer, StyledIcon } from "./icon.styles";
+import { IconContainer } from "./icon.styles";
 
 interface IconProps {
-  iconPath: string;
-  onClick: MouseEventHandler;
+  IconComponent: React.FC;
+  onClick?: () => void;
+  width?: string;
+  height?: string;
+  color?: string;
+  style?: React.CSSProperties;
 }
 
-const Icon = ({ iconPath, onClick }: IconProps) => {
+const Icon = ({ IconComponent, onClick, width = "70px", height = "70px", color, style }: IconProps) => {
   return (
-    <IconContainer className="icon" onClick={onClick}>
-      <StyledIcon iconPath={iconPath} />
+    <IconContainer onClick={onClick} $width={width} $height={height} $color={color}>
+      <IconComponent style={style} />
     </IconContainer>
   );
 };

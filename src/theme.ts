@@ -1,7 +1,8 @@
 export const theme = {
-  primaryColor: "",
-  secondaryColor: "",
-  primaryFontColor: "",
+  primaryColor: "hsl(345, 95%, 68%)",
+  secondaryColor: "hsl(236, 21%, 26%)",
+  backgroundColor: "hsl(236, 16%, 14%)",
+  primaryFontColor: "hsl(0, 0%, 100%)",
   secondaryFontColor: "",
-  miscColor: "",
+  iconColor: "hsl(237, 18%, 59%)",
 };
