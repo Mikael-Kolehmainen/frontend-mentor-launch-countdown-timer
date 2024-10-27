@@ -7,6 +7,9 @@ import {
   SocialsContainer,
   Time,
   TimeCard,
+  TimeCardContainer,
+  TimeCardLower,
+  TimeCardUpper,
   TimeContainer,
   TimeLabel,
   TimerContainer,
@@ -43,9 +46,13 @@ const Home = () => {
         {timeLeftToLaunch.map((timeLeft) => {
           return (
             <TimeContainer>
-              <TimeCard>
+              <TimeCardContainer>
+                <TimeCard>
+                  <TimeCardUpper></TimeCardUpper>
+                  <TimeCardLower></TimeCardLower>
+                </TimeCard>
                 <Time>{padToTwoDigits(timeLeft.time)}</Time>
-              </TimeCard>
+              </TimeCardContainer>
               <TimeLabel>{timeLeft.label}</TimeLabel>
             </TimeContainer>
           );

@@ -40,10 +40,33 @@ export const TimeContainer = styled.div`
   gap: 15px;
 `;
 
-export const TimeCard = styled.div`
-  background-color: ${(props) => props.theme.secondaryColor};
+export const TimeCardContainer = styled.div`
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 10px 0;
+  position: relative;
+`;
+
+export const TimeCard = styled.div`
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 3px ${(props) => props.theme.shadowColor};
+`;
+
+export const TimeCardUpper = styled.div`
+  height: 35px;
+  width: 100%;
+  background-color: ${(props) => props.theme.backgroundColor};
+  border-radius: 4px 4px 8px 8px;
+`;
+
+export const TimeCardLower = styled.div`
+  height: 35px;
+  width: 100%;
+  background-color: ${(props) => props.theme.secondaryColor};
+  border-radius: 8px 8px 4px 4px;
 `;
 
 export const Time = styled.label`
@@ -51,6 +74,10 @@ export const Time = styled.label`
   font-size: 38px;
   text-align: center;
   letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const TimeLabel = styled.label`
