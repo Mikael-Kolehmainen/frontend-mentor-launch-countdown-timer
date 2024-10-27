@@ -3,6 +3,7 @@ import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa6";
 import Icon from "../../components/icon/icon.component";
 import { padToTwoDigits } from "../../utils";
 import {
+  BackgroundImage,
   HomeContainer,
   SocialsContainer,
   Time,
@@ -63,6 +64,7 @@ const Home = () => {
           return <Icon IconComponent={social.icon} link={social.link} target="_blank" width="25px" height="25px" />;
         })}
       </SocialsContainer>
+      <BackgroundImage src="/bg-stars.svg" alt="Background stars" />
     </HomeContainer>
   );
 };

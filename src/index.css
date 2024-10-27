@@ -16,8 +16,7 @@ html,
 body,
 #root {
   height: 100%;
-  background-color: hsl(236, 16%, 14%);
-  background-image: url(/bg-stars.svg);
+  background-image: linear-gradient(180deg, hsl(235, 16%, 14%), hsl(236, 21%, 19%));
   color: black;
-  overflow: auto;
+  overflow: hidden;
 }

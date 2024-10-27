@@ -59,14 +59,14 @@ export const TimeCardUpper = styled.div`
   height: 35px;
   width: 100%;
   background-color: ${(props) => props.theme.backgroundColor};
-  border-radius: 4px 4px 8px 8px;
+  border-radius: 4px;
 `;
 
 export const TimeCardLower = styled.div`
   height: 35px;
   width: 100%;
   background-color: ${(props) => props.theme.secondaryColor};
-  border-radius: 8px 8px 4px 4px;
+  border-radius: 4px;
 `;
 
 export const Time = styled.label`
@@ -98,4 +98,10 @@ export const SocialsContainer = styled.div`
   gap: 25px;
   justify-content: center;
   align-items: center;
+`;
+
+export const BackgroundImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `;
